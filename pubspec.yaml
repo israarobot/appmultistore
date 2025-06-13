@@ -1,0 +1,48 @@
+name: carthage_store
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  get: ^4.7.2
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.3
+  cloud_firestore: ^5.6.7
+  share_plus: ^11.0.0
+  google_sign_in: ^6.3.0
+  google_fonts: ^6.2.1
+  firebase_storage: ^12.1.0
+  image_picker: ^1.0.0
+  video_player: ^2.9.5
+  carousel_slider: ^5.0.0
+  chewie: ^1.11.3
+  animate_do: ^4.2.0
+  dropdown_button2: ^2.3.9
+  provider: ^6.1.5
+  lottie: ^3.3.1
+  cached_network_image: ^3.4.1
+  intl: ^0.20.2
+  flutter_launcher_icons: ^0.14.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/Logo.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true

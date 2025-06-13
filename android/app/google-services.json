@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "821032240777",
+    "project_id": "carthageapp-fc62a",
+    "storage_bucket": "carthageapp-fc62a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821032240777:android:0a1558f921c581786ea858",
+        "android_client_info": {
+          "package_name": "com.example.carthage_store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFLw-dkoYGjZHWoEN-CuvDRy1pQAEFucM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
