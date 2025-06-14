@@ -95,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                   ),
                   const SizedBox(height: 20),
 
-                  // Email Field
+                  
                   TextField(
                     controller: _emailController,
                     decoration: InputDecoration(
@@ -150,7 +150,6 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                   ),
                   const SizedBox(height: 15),
 
-                  // Login Button
                   Obx(
                     () => ElevatedButton(
                       style: ElevatedButton.styleFrom(
@@ -181,7 +180,6 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                   ),
                   const SizedBox(height: 20),
 
-                  // Divider OR
                   Row(
                     children: [
                       Expanded(child: Divider(color: Colors.grey[400])),
@@ -200,7 +198,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                   ),
                   const SizedBox(height: 20),
 
-                  // Google Sign-In Button
+                 
                   Obx(
                     () => SocialSigninButton(
                       icon: Icons.g_mobiledata,
@@ -217,7 +215,7 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                   ),
                   const SizedBox(height: 20),
 
-                  // Link to signup
+                 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [

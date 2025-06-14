@@ -4,11 +4,11 @@ import 'auth-controller.dart';
 
 class CheckoutController {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-  final AuthController _authController = Get.find<AuthController>(); // Access AuthController
+  final AuthController _authController = Get.find<AuthController>(); 
 
   Future<void> submitOrder({
     required Map<String, dynamic> product,
-    required String name,
+    required String name,//Attend nom sous forme de chaîne
     required String phone,
     required String address,
   }) async {

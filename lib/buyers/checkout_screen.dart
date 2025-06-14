@@ -12,14 +12,14 @@ class CheckoutScreen extends StatefulWidget {
 }
 
 class _CheckoutScreenState extends State<CheckoutScreen> with SingleTickerProviderStateMixin {
-  final _formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();//clé globale utilisée pour contrôler l’état d’un formulaire
   final _nameController = TextEditingController();
   final _phoneController = TextEditingController();
   final _emailController = TextEditingController();
   final _addressController = TextEditingController();
   late AnimationController _controller;
   late Animation<Offset> _slideAnimation;
-  bool _isSubmitting = false;
+  bool _isSubmitting = false;// soumission en cours
   final CheckoutController _checkoutController = CheckoutController();
 
   @override
@@ -47,6 +47,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> with SingleTickerProvid
   }
 
   void _submitOrder() async {
+    //valider formulaire et verifier si tous les champs valide 
     if (_formKey.currentState!.validate()) {
       setState(() {
         _isSubmitting = true;
@@ -54,7 +55,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> with SingleTickerProvid
       
       try {
         await _checkoutController.submitOrder(
-          product: widget.product,
+          product: widget.product,//envoie le produit sélectionné au backend 
           name: _nameController.text,
           phone: _phoneController.text,
           address: _addressController.text,

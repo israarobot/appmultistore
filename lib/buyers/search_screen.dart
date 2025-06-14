@@ -30,15 +30,15 @@ class _SearchScreenState extends State<SearchScreen> {
     });
 
     try {
-      // Fetch all products without user_id filter
+     //lire tous les produits stockés 
       QuerySnapshot querySnapshot = await FirebaseFirestore.instance
           .collection('products')
           .get();
 
-      // Clear existing products in controller
+
       _productController.products.clear();
 
-      // Process each document and validate URLs
+     
       _productController.products.addAll(await Future.wait(querySnapshot.docs.map((doc) async {
         final data = doc.data() as Map<String, dynamic>;
         data['id'] = doc.id;
@@ -64,7 +64,7 @@ class _SearchScreenState extends State<SearchScreen> {
         return data;
       })));
 
-      // Update filtered products
+      // Update screen user
       setState(() {
         _filteredProducts = _productController.products;
       });

@@ -231,7 +231,7 @@ class AuthController extends GetxController {
         Get.offNamed('/admin');
       } else {
         await _auth.signOut();
-        _errorMessage.value = "You are not authorized to access.";
+        _errorMessage.value = "You are not authorized to access.";//sauf buyer
       }
     } else {
       _errorMessage.value = "Login failed.";
